@@ -1,0 +1,85 @@
+.wrapper {
+	width: 900px;
+	margin: 0 auto;	
+}
+.block {
+	padding: 20px;
+	border: 1px solid #000;
+}
+.clearfix:before,
+.clearfix:after {
+    content: "";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+.navigation {
+ 	position: relative;
+ 	margin-bottom: 20px;
+ }
+.wrapper .menu {
+	display: none;
+	color: #ccc
+ 	font-weight: bold;
+ 	position: absolute;
+ 	top:0;
+ 	left:0;
+}
+.close-button {
+	display: none;
+	text-decoration: none;
+ 	position: absolute;
+ 	top:0;
+ 	left:50%;
+}
+.main-menu {
+	display: table;
+	margin: 0 auto;	
+	position: relative;	
+}
+.main-menu .dropdown>a{
+	background: #ccc;
+	padding: 10px;
+}
+.dropdown{
+	float: left;
+	padding: 20px;
+	text-transform: uppercase;
+}
+ .submenu {
+ 	display: none;
+ 	text-align: center;
+ 	background: #ccc;
+ 	position: absolute;
+ 	top: 50px;
+ }
+ .submenu li {
+ 	padding: 5px;
+ }
+ .submenu li:hover {
+ 	background: #fff;
+ }
+.dropdown:hover .submenu {
+ display: block;
+ }
+
+ @media screen and (max-width: 480px) {
+ .wrapper .menu  {
+ 	display: block;
+ 	text-decoration: none;
+	font-size: 20px; 
+	float: left;	
+ }
+.main-menu{
+	display: none;
+}
+.make-visible {
+ 	display: block;
+ 	margin: 0;
+ 	width: 200px;
+ }
+.make-invisible {
+	display: none;
+}
+}
