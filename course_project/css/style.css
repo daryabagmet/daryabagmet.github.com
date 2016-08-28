@@ -96,7 +96,7 @@ h3 {
 .vertical-line:after {
 	content: "";
 	width: 1px;
-	height: 60px;
+	height: 58px;
 	background: #e2e2e2;
     position: absolute;
     top: -15px;
