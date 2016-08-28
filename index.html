@@ -1,211 +1,89 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta http-equiv="content-type" content="text/html; charset=utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="css/reset.css">
-		<link rel="stylesheet" href="css/style.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-		<script src="js/main.js"></script>
-	</head>
-	<body>
-<style>
-.wrapper {
-	width: 900px;
-	margin: 0 auto;	
-}
-.block {
-	padding: 20px;
-	border: 1px solid #000;
-}
-.clearfix:before,
-.clearfix:after {
-    content: "";
-    display: table;
-}
-.clearfix:after {
-    clear: both;
-}
-.navigation {
- 	position: relative;
- 	margin-bottom: 20px;
- }
-.wrapper .menu {
-	display: none;
-	color: #ccc
- 	font-weight: bold;
- 	position: absolute;
- 	top:0;
- 	left:0;
-}
-.close-button {
-	display: none;
-	text-decoration: none;
- 	position: absolute;
- 	top:0;
- 	left:50%;
-}
-.main-menu {
-	display: table;
-	margin: 0 auto;	
-	position: relative;	
-}
-.main-menu .dropdown>a{
-	background: #ccc;
-	padding: 10px;
-}
-.dropdown{
-	float: left;
-	padding: 20px;
-	text-transform: uppercase;
-}
- .submenu {
- 	display: none;
- 	text-align: center;
- 	background: #ccc;
- 	position: absolute;
- 	top: 50px;
- }
- .submenu li {
- 	padding: 5px;
- }
- .submenu li:hover {
- 	background: #fff;
- }
-.dropdown:hover .submenu {
- display: block;
- }
-
- @media screen and (max-width: 480px) {
- .wrapper .menu  {
- 	display: block;
- 	text-decoration: none;
-	font-size: 20px; 
-	float: left;	
- }
-.main-menu{
-	display: none;
-}
-.make-visible {
- 	display: block;
- 	margin: 0;
- 	width: 200px;
- }
-.make-invisible {
-	display: none;
-}
-}
-</style>
-<style>
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-</style>
-		<div class="wrapper ">
-			<div class="navigation clearfix">
-				<a href="#" id="some" class="menu">Menu</a>
-				<a href="#" class="close-button">X</a>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		html, body {
+			height: 100%;
+			color: #fff;
+			font-family: 'Dancing Script', cursive;
+			font-weight: bold;
+		}
+		a {
+			color: #fff;
+			text-decoration: none;
+		}
+		.main-content {
+			min-height: 100%;
+			background-image: url("http://kobmer.ru/www/3/goluboy_fon_belye_linii_tekstura_fon_2560x1600.jpg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+		}
+		.header {
+			text-align: center;
+			padding: 35px 0;
+			font-size: 55px
+		}
+		.wrapper {
+			width: 900px;
+			height: 100%;
+			padding-bottom: 40px;
+			margin: 0 auto;
+		}
+		.flex {
+			display: flex;
+			justify-content: center;
+		}
+		.works-list {
+			list-style: none;
+			text-align: center;
+			margin: 50px auto;
+		}
+		.works {
+			display: inline-block;
+			padding: 65px 40px;
+			font-size: 30px;
+			background-color: #6495ED;
+			opacity: 0.8;
+			-webkit-box-shadow: 0px 3px 23px -1px rgba(0,0,139,1);
+			-moz-box-shadow: 0px 3px 23px -1px rgba(0,0,139,1);
+			box-shadow: 0px 3px 23px -1px rgba(0,0,139,1);
+		}
+		.works a:hover {
+			color: #00008B;
+		}
+		.footer {
+			height: 40px;
+			margin-top: -40px;
+			padding: 10px;
+			text-align: center;
+			font-size: 20px;
+			border-top: 1px solid #5F9EA0;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+	<div class="main-content">
+		<div class="wrapper">
+			<div class="header">
+				<p>My works</p>
 			</div>
-			<ul class="main-menu clearfix">
-				<li class="dropdown">
-					<a href="#">About</a>
-					<ul class="submenu">
-						<li><a href="#">Submenu1</a></li>
-						<li><a href="#">Submenu2</a></li>
-						<li><a href="#">Submenu3</a></li>
-						<li><a href="#">Submenu4</a></li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="#">Solution</a>
-					<ul class="submenu">
-						<li><a href="#">Submenu1</a></li>
-						<li><a href="#">Submenu2</a></li>
-						<li><a href="#">Submenu3</a></li>
-						<li><a href="#">Submenu4</a></li>
-					</ul>
-				</li>
-						<li class="dropdown">
-					<a href="#">Company Blog</a>
-					<ul class="submenu">
-						<li><a href="#">Submenu1</a></li>
-						<li><a href="#">Submenu2</a></li>
-						<li><a href="#">Submenu3</a></li>
-						<li><a href="#">Submenu4</a></li>
-					</ul>
-				</li>
-				<li class="dropdown">
-					<a href="#">Contacts</a>
-					<ul class="submenu">
-						<li><a href="#">Submenu1</a></li>
-						<li><a href="#">Submenu2</a></li>
-						<li><a href="#">Submenu3</a></li>
-						<li><a href="#">Submenu4</a></li>
-					</ul>
-				</li>
+			<div class="flex">
+				<ul class="works-list">
+					<li class="works"><a href="#">Project 1</a></li>
+					<li class="works"><a href="#">Project 2</a></li>
+					<li class="works"><a href="#">Project 3</a></li>
 				</ul>
-				<div class="block">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus, nibh sed tempus dapibus, arcu lorem iaculis lorem, in commodo felis est ut dolor. Praesent semper dolor non sollicitudin mattis. Etiam fermentum, nulla a sagittis lobortis, arcu dolor auctor tortor, quis lobortis dui nibh id sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi feugiat scelerisque felis. Quisque finibus ipsum ut massa rhoncus, quis dictum tellus ultrices. Duis mattis interdum ipsum vel lacinia. Duis aliquet libero id orci tincidunt, vitae feugiat arcu facilisis. Donec auctor dolor sit amet tincidunt volutpat. Ut sit amet efficitur enim. Morbi aliquet arcu nec aliquam luctus. Nullam posuere eros quis vulputate consectetur. Vivamus ut ante feugiat, aliquet justo ac, aliquet nibh. Maecenas eu accumsan diam, in malesuada dolor.
 			</div>
-			<div class="block">
-					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus, nibh sed tempus dapibus, arcu lorem iaculis lorem, in commodo felis est ut dolor. Praesent semper dolor non sollicitudin mattis. Etiam fermentum, nulla a sagittis lobortis, arcu dolor auctor tortor, quis lobortis dui nibh id sem. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Morbi feugiat scelerisque felis. Quisque finibus ipsum ut massa rhoncus, quis dictum tellus ultrices. Duis mattis interdum ipsum vel lacinia. Duis aliquet libero id orci tincidunt, vitae feugiat arcu facilisis. Donec auctor dolor sit amet tincidunt volutpat. Ut sit amet efficitur enim. Morbi aliquet arcu nec aliquam luctus. Nullam posuere eros quis vulputate consectetur. Vivamus ut ante feugiat, aliquet justo ac, aliquet nibh. Maecenas eu accumsan diam, in malesuada dolor.
-			</div>
-			</div>
-<script>
-$(document).ready(function() {
-	$(".menu").click(function() {
-		$(".main-menu, .close-button").addClass("make-visible");
-		$(".menu").hide();
-	});
-		$(".close-button").click(function() {
-			$(".main-menu, .close-button").addClass("make-invisible");
-			$(".menu").show();
-		});
-});
-
-
-
-
-</script>
-	</body>
+		</div>
+	</div>
+	<div class="footer">Darya Bagmet</div>
+</body>
 </html>
