@@ -406,54 +406,131 @@ footer {
 }
 
 @media screen and (min-width : 320px) and (max-width: 668px){
-	.wrapper {
-		width: 100%;
-	}
-	.logo {
-		display: none;
-	}
-	.nav-mobile {
-		display: block;
-	}
-	.main-menu {
-		display: none;
-	}
-	.great {
-		font-size: 30px;
-	}
-	.text-block {
-		width: 100%;
-		font-size: 20px;
-		letter-spacing: 0;
-	}
-	.left-side-content {
-		width: 100%;
-		margin: 0 auto;
-		text-align: center;
-	}
-	.right-side-content {
-		display: none;
-	}
+.wrapper {
+	width: 100%;
+}
+.logo {
+	display: none;
+}
+.main-menu {
+	display: none;
+	position: relative;
+}
+.main-menu li {
+	display: block;
+	margin: 10px;
+	color: #fff;
+	font-weight: bold;
+}
+.nav-mobile {
+	display: block;
+	padding: 10px;
+}
+.nav {
+	height: auto;
+	opacity: 0.7;
+	padding-top: 0;
+}
+.great {
+	font-size: 30px;
+}
+.text-block {
+	width: 100%;
+	font-size: 20px;
+	letter-spacing: 0;
+}
+.left-side-content {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+}
+.right-side-content {
+	display: none;
+}
 
-	.pancakes-block {
-		width: auto;
-	}
-	.pancakes-block .pancakes-right-side .ready-block {
-		display: none;
-	}
-	.breakfast-right-bg {
-		display: none;
-	}
-	.time-block {
-		display: none;
-	}
-	.sandwich-left-block {
-		display: none;
-	}
-	.sandwich-right-block {
-		width: auto;
-	}
-	.sandwich-right-block-image {
+.pancakes-block {
+	width: auto;
+}
+.pancakes-block .pancakes-right-side .ready-block {
+	display: none;
+}
+.breakfast-right-bg {
+	display: none;
+}
+.time-block {
+	display: none;
+}
+.sandwich-left-block {
+	display: none;
+}
+.sandwich-right-block {
+	width: auto;
+}
+.sandwich-right-block-image {
+width: 400px;
+height: 350px;
+overflow: hidden;
+margin-top: 25px;
+border: 10px solid #fff;
+box-sizing: border-box;
+}
+
+}
+@media screen and (min-width : 669px) and (max-width: 950px){
+.wrapper {
+	width: 100%;
+}
+.logo {
+	display: none;
+}
+.nav-mobile {
+	display: block;
+}
+.main-menu li{
+	display: none;
+	width: 300px;
+}
+.central-block {
+margin-top: 150px;
+}
+.art-block-content {
+	padding-top: 65px;
+}
+.left-side-content {
+	max-width: 50%;
+}
+.article-middle {
+	margin: 7px 0;
+}
+.citation-block {
+	display: none;
+}
+.pancakes-block .pancakes-right-side .ready-block {
+	display: none;
+}
+.breakfast-right-block-menu {
+	text-align: center;
+	padding: 15px 35px;
+}
+.breakfast-right-bg {
+	background-image: url("../images/breakfast-menu-bg.jpg");
+	background-repeat: no-repeat;
+	padding-top: 30px;
+}
+.est {
+	display: none;
+}
+.our-menu-button {
+    margin: 15px auto;
+    box-sizing: border-box;
+}
+.time-block {
+	display: none;
+}
+.sandwich-right-block {
+	width: auto;
+}
+.sandwich-right-block-image {
 	width: 400px;
 	height: 350px;
 	overflow: hidden;
@@ -461,75 +538,11 @@ footer {
 	border: 10px solid #fff;
 	box-sizing: border-box;
 }
-
+.article-small {
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #c0a090;
+    padding: 5px 0;
 }
-	
-@media screen and (min-width : 669px) and (max-width: 950px){
-	.wrapper {
-		width: 100%;
-	}
-	.logo {
-		display: none;
-	}
-	.nav-mobile {
-		display: block;
-	}
-	.main-menu {
-		display: none;
-	}
-	.central-block {
-    margin-top: 150px;
-	}
-	.art-block-content {
-		padding-top: 65px;
-	}
-	.left-side-content {
-		max-width: 50%;
-	}
-	.article-middle {
-		margin: 7px 0;
-	}
-	.citation-block {
-		display: none;
-	}
-	.pancakes-block .pancakes-right-side .ready-block {
-		display: none;
-	}
-	.breakfast-right-block-menu {
-		text-align: center;
-		padding: 15px 35px;
-	}
-	.breakfast-right-bg {
-		background-image: url("../images/breakfast-menu-bg.jpg");
-		background-repeat: no-repeat;
-		padding-top: 30px;
-	}
-	.est {
-		display: none;
-	}
-	.our-menu-button {
-	    margin: 15px auto;
-	    box-sizing: border-box;
-	}
-	.time-block {
-		display: none;
-	}
-	.sandwich-right-block {
-		width: auto;
-	}
-	.sandwich-right-block-image {
-		width: 400px;
-		height: 350px;
-		overflow: hidden;
-		margin-top: 25px;
-		border: 10px solid #fff;
-		box-sizing: border-box;
-}
-	.article-small {
-	    font-size: 15px;
-	    font-weight: bold;
-	    text-transform: uppercase;
-	    color: #c0a090;
-	    padding: 5px 0;
-	}
 }
