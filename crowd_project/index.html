@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Crowd</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/w3.css">
+  <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link href="css/jquery.bxslider.css" rel="stylesheet"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+  <script src="js/jquery.bxslider.js"></script>
+  <script src="js/app.js"></script>
+</head>
+<body>
+ <div id="home" class="wrapper">
+  <aside id="nav">
+    <ul class="mobile-menu upperCase">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#how">How it works</a></li>
+      <li><a href="#discover">Discover a project</a></li>
+      <li><a href="#blog">Blog</a></li>
+    </ul>
+  </aside>
+
+    <header  class="flex flex-around">
+      <i id="mobile-btn" class="mobile-menu-icon ion-navicon-round"></i> 
+      <span class="logo-block">
+        <img src="images/logo.png" alt="logo">
+      </span>
+        <ul class="menu upperCase">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#discover">Discover a project</a></li>
+          <li><a href="#blog">Blog</a></li>
+        </ul>
+      <a href="#popup1" class="btn upperCase">Login</a>
+    </header>
+</div>
+<div class="main-block">
+  <div class="central">
+    <h1>Intellectual Property has the Shelf life</h1>
+    <h3>of a Banana</h3>
+    <a href="#popup1" class="btn great">Become a Member</a>
+  </div>
+</div>
+<div class="our-work-block">
+  <div class="wrapper central">
+    <p> <img src="images/our_work_logo.png" alt="our work logo"></p>
+      <p class="upperCase article-block">Our work is the presentation of our capabilities</p>
+      <p class="article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit ante quis ex egestas, ut scelerisque erat dictum. Integer vitae elit id sapien dapibus scelerisque. Vestibulum ornare odio nec massa rhoncus mattis.</p>
+      <p class="article">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec elit metus, efficitur vitae faucibus in, sagittis porta est. Suspendisse eget sollicitudin arcu. Cras maximus porttitor neque, sed blandit lectus suscipit a.</p>
+  </div>
+</div>
+
+<div id="how" class="container">
+  <div class="tab flex flex-between">
+  <div class="tablinks flex" onclick="openTab(event, 'Tab1')"><span class="number">1</span><span class="text">Simple</span>
+  </div>
+  <div class="tablinks flex" onclick="openTab(event, 'Tab2')"><span class="number">2</span><span class="text">Transparent</span></div>
+  <div class="tablinks flex" onclick="openTab(event, 'Tab3')"><span class="number">3</span><span class="text">Collaborate</span></div>
+  </div>
+
+  <div id="Tab1" class="tabcontent" style="display: block">
+    <div class="flex">
+      <p class="image-container"><img src="images/glass.png" alt="glasses"></p>
+      <div class="text-container">
+        <p class="tabs-article">Browse project, like booking a hotel online!</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit ante quis ex egestas, ut scelerisque erat dictum. Integer vitae elit id sapien dapibus scelerisque. Vestibulum ornare odio nec massa rhoncus mattis.Suspendisse eget sollicitudin arcu. Cras maximus porttitor neque, sed blandit lectus suscipit a.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="Tab2" class="tabcontent">
+    <div class="flex">
+      <p class="image-container"><img src="images/glass.png" alt="glasses"></p>
+      <div class="text-container">
+        <p class="tabs-article">Transparent</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit ante quis ex egestas, ut scelerisque erat dictum. Integer vitae elit id sapien dapibus scelerisque. Vestibulum ornare odio nec massa rhoncus mattis.Suspendisse eget sollicitudin arcu. Cras maximus porttitor neque, sed blandit lectus suscipit a.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="Tab3" class="tabcontent">
+    <div class="flex">
+      <p class="image-container"><img src="images/glass.png" alt="glasses"></p>
+      <div class="text-container">
+        <p class="tabs-article">Collaborate</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit ante quis ex egestas, ut scelerisque erat dictum. Integer vitae elit id sapien dapibus scelerisque. Vestibulum ornare odio nec massa rhoncus mattis.Suspendisse eget sollicitudin arcu. Cras maximus porttitor neque, sed blandit lectus suscipit a.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex wrap">
+  <div class="left-side-block">
+    <div class="block-wrapper">
+      <div class="flex">
+        <div class="image-block">
+          <img src="images/find_prop_image.png" alt="find">
+        </div>
+        <div class="text-block">
+          <p class="article bold">Find Properties</p>
+          <p>Sign up to browse the portfolio. Your journey  to becoming a real estate baron starts here</p>
+          <a href="#popup1" class="btn medium">Become a Member</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="right-side-block">
+   <div class="block-wrapper">
+     <div class="flex">
+       <div class="image-block">
+        <img src="images/find_buy_image.png" alt="find">
+        </div>
+        <div class="text-block">
+          <p class="article bold">Find Buyers</p>
+          <p>Sign up to browse the portfolio. Your journey  to becoming a real estate baron starts here</p>
+          <a href="#popup1" class="btn medium">Submit Your Project</a>
+        </div>
+     </div>
+   </div>
+  </div>
+</div>
+<div class="wrapper">
+  <div id="discover" class="projects-block">
+    <p class="article">Featured Projects</p>
+    <div class="flex flex-between">
+      <p class="text-block">Brief details of new and popular projects. To view full listings, you will be required to sign up and become a member.</p>
+      <p class="button-block"><a href="#popup1" class="btn medium">Become a Member</a></p>
+    </div>
+    <div class="flex wrap flex-between">
+      <div class="project-block-container">
+        <div class="project-block-image">
+          <img  src="images/project1.png" alt="project">
+          <span class="new-block"></span><span class="uppercase new-block-text">New</span>
+        </div>
+        <div class="project-block-item">
+          <p class="projects-block-article bold">Ontario Tower, LONDON</p>
+          <p class="flex-between">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit ante quis ex egestas, ut scelerisque erat dictum. </p>
+          <div class="w3-light-grey w3-round">
+            <div class="w3-container w3-round progress-bar-color" style="width:10%"><span class="progress-bar-text">10%</span></div>
+          </div>
+          <p class="flex flex-between progress-bar">
+            <span>10% Funded</span>
+            <span>8 days left</span>
+          </p>
+        </div>
+      </div>
+       <div class="project-block-container">
+        <div class="project-block-image">
+          <img  src="images/project2.png" alt="project">
+          <span class="new-block"></span><span class="uppercase new-block-text">New</span>
+        </div>
+        <div class="project-block-item">
+          <p class="projects-block-article bold">Ontario Tower, LONDON</p>
+          <p class="flex-between">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit ante quis ex egestas, ut scelerisque erat dictum. </p>
+          <div class="w3-light-grey w3-round">
+            <div class="w3-container w3-round progress-bar-color" style="width:60%"><span class="progress-bar-text">60%</span></div>
+          </div>
+          <p class="flex flex-between progress-bar">
+            <span>60% Funded</span>
+            <span>8 days left</span>
+          </p>
+        </div>
+      </div>
+       <div class="project-block-container">
+        <div class="project-block-image">
+          <img  src="images/project1.png" alt="project">
+          <span class="new-block"></span><span class="uppercase new-block-text">New</span>
+        </div>
+        <div class="project-block-item">
+          <p class="projects-block-article bold">Ontario Tower, LONDON</p>
+          <p class="flex-between">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer suscipit ante quis ex egestas, ut scelerisque erat dictum. </p>
+          <div class="w3-light-grey w3-round">
+            <div class="w3-container w3-round progress-bar-color" style="width:10%"><span class="progress-bar-text">10%</span></div>
+          </div>
+          <p class="flex flex-between progress-bar">
+            <span>10% Funded</span>
+            <span>8 days left</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="blog" class="community-block">
+  <div class="wrapper">
+    <p class="community-block-article">Be Part of a Growing International Community</p>
+    <p class="article">Lorem ipsum consectetur adipiscing elit. Integer suscipit ante quis ex egestas, ut scelerisque erat dictum. Integer vitae elit id sapien dapibus scelerisque.
+    ipsum consectetur adipiscing elit. Integer suscipit ante quis ex egestas, ut scelerisque erat dictum. Integer</p>
+  </div>
+  
+  <div class="bxslider">
+    <div>
+      <div class="slide-container">
+        <p class="comments-block">Lorem ipsum adipisicing elit. Quod, adipisci possimus ex recusandae illo Debitis et mollitia quae excepturi rem velit aperiam esse.
+        </p>
+        <p class="author-block flex">
+          <img src="images/128.jpg" alt="photo">
+          <span>John James</span>
+        </p>
+      </div>
+      <div class="slide-container">
+        <p class="comments-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit laudantium quisquam mollitia quae excepturi rem velit aperiam esse.
+        </p>
+        <p class="author-block flex">
+          <img src="images/129.jpg" alt="photo">
+          <span>Peter Tomson</span>
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <div class="slide-container">
+        <p class="comments-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis et laudantium quisquam mollitia quae excepturi rem velit aperiam esse.
+        </p>
+        <p class="author-block flex">
+          <img src="images/130.jpg" alt="photo">
+          <span>Jeremy Inch</span>
+        </p>
+      </div>
+      <div class="slide-container">
+        <p class="comments-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        </p>
+        <p class="author-block flex">
+          <img src="images/128.jpg" alt="photo">
+          <span>Peter Johnson</span>
+        </p>
+      </div>
+    </div>
+
+    <div>
+      <div class="slide-container">
+        <p class="comments-block">Quod, adipisci possimus ex recusandae illo nam provident laboriosam alias fugit? Debitis et laudantium esse.
+        </p>
+        <p class="author-block flex">
+          <img src="images/129.jpg" alt="photo">
+          <span>Mike Ford</span>
+        </p>
+      </div>
+      <div class="slide-container">
+        <p class="comments-block">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+        <p class="author-block flex">
+          <img src="images/130.jpg" alt="photo">
+          <span>Peter Eleven</span>
+        </p>
+      </div>
+    </div>  
+  </div>
+
+</div>
+
+<footer>
+  <p><img src="images/footer.png" alt="footer"></p>
+  <b>2017</b><span>&#169;</span>
+</footer>
+
+
+
+<div id="popup1" class="overlay">
+  <div class="popup">
+    <h2>Become a member</h2>
+    <a class="close" href="#">&times;</a>
+    <div class="content">
+      <form action="#">
+        <p class="flex flex-between">
+          <span>E-mail:</span>
+          <label><input type="email" placeholder="Enter your email" required></label>
+        </p>
+        <p class="flex flex-between">
+          <span>Password:</span>
+          <label><input type="password" placeholder="Enter your password" required></label>
+        </p>
+        <p>
+          <label><input type="submit" class="btn upperCase" value="Submit"></label>
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
