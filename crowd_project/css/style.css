@@ -71,9 +71,12 @@ li:hover{
 	display: block;
 }
 #mobile-btn{
+	display: none;
+	max-width: 35px;
+	margin: 0 10px;
 	position: absolute;
-	top: 1%;
-	left: 1%;
+	top: 3%;
+	left: 0;
 }
 
 /*header*/
@@ -459,10 +462,6 @@ form input[type="submit"] {
 	        border-radius: 10px;
 }
 
-.mobile-menu-icon{
-	display: none;
-}
-
 @media screen and (max-width: 320px) {
 	body{
 		display: none;
@@ -477,11 +476,8 @@ form input[type="submit"] {
 	.bx-wrapper{
 		display: none;
 	}
-	#home header .mobile-menu-icon{
+	#mobile-btn{
 		display: block;
-		font-size: 35px;
-		color:  #aaaaaa;
-		margin: 0 10px;
 	}
 	.left-side-block,
 	.right-side-block,
