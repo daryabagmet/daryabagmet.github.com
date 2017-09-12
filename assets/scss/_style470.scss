@@ -31,6 +31,11 @@ header{
 
 	.works{
 		width: 80%;
+
+		.block{
+			-webkit-box-shadow: none;
+			        box-shadow: none;
+		}
 	}
 
 }

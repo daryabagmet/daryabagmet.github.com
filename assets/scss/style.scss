@@ -7,8 +7,6 @@ $progressbar-color: #5b529d;
 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
-     -moz-border-radius: $radius;
-      -ms-border-radius: $radius;
           border-radius: $radius;
 }
 
@@ -17,7 +15,7 @@ body{
 }
 
 .wrapper{
-	max-width: 85%;
+	max-width: 90%;
 	margin: 0 auto;
 }
 
@@ -45,13 +43,25 @@ header{
 
 }
 .flex{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	justify-content: space-between;	
+	-webkit-box-pack: justify;
+	-webkit-justify-content: space-between;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;	
 }
 
 .flex-center{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
 	display: flex;
-	align-items: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	    -ms-flex-align: center;
+	        align-items: center;
 }
 
 .round-image{
@@ -59,7 +69,7 @@ header{
 }
 
 .sidebar {
-	width: 35%;
+	width: 40%;
 	padding: 2%;
 	font-weight: 400;
 	background-color: $sidebar_bg_color;
@@ -107,9 +117,12 @@ img{
 	}
 
 	.works{
-		width: 60%;
 		margin: 3% auto;
-	 	flex-flow: row wrap;
+	 	-webkit-box-orient: horizontal;
+	 	-webkit-box-direction: normal;
+	 	-webkit-flex-flow: row wrap;
+	 	    -ms-flex-flow: row wrap;
+	 	        flex-flow: row wrap;
 
 		.block{
 			background-color:$sidebar_bg_color;
@@ -117,7 +130,8 @@ img{
 			height: auto;
 			margin: 2% auto;
 			text-align: center;
-
+			-webkit-box-shadow: 15px 15px 5px -5px rgba(204,198,204,1);
+					box-shadow: 15px 15px 5px -5px rgba(204,198,204,1);
 			p{
 				margin: 1%;
 			}
