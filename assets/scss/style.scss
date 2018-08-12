@@ -15,7 +15,6 @@ body {
 .portfolio-wrapper {
 	@include flex(flex-end, stretch);
 	width: 100%;
-	max-width: 1350px;
 	margin: 0 auto;
   	background-color: $bg-main;
 }
