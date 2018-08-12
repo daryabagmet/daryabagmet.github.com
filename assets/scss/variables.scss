@@ -11,7 +11,7 @@ $green-light: #1ab5b3;
 $grey-dark: #333333;
 
 
-@mixin flex($horizontal-align: flex-start, $vertical-align: normal) {
+@mixin flex($horizontal-align: flex-start, $vertical-align: initial) {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: $horizontal-align;
