@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Darya Bagmet Test Task</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+
+   
+</head>
+<body>
+    <div class="main-wrapper"  id="app">
+      
+     
+        <label class="search-wrapper">
+            <span class="search-text">Trick or treat ?</span>
+            <input type="text" v-model.lazy="imgTitle" @keyup.enter="visible = !visible" class="search-field"/>
+        </label>
+
+        <div class="images-wrapper" v-if = "visible">   
+            <span v-for="images in filteredList" >
+                <img :src="images.src" alt="img" />
+
+            </span>
+
+            <div class="container" v-if = " imgTitle == 'trick' ">
+                <img :src="cauldron" alt="container">
+            </div> 
+
+            <div class="container" v-else-if = " imgTitle == 'treat' " >
+                <img :src="pumpkin" alt="container">
+            </div> 
+        </div> 
+
+        <div class="spider-web-wrapper">
+            <img src="images/spider.png" alt="spider">
+
+        </div> 
+
+    </div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+
+<script src="js/app.js"></script>
+
+</body>
+</html>

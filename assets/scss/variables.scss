@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+
+$font-main: 'Open Sans', sans-serif;
+
+
+
+$bg-main: #242b2e;
+$black: #000000;
+$white: #ffffff;
+$green-light: #1ab5b3;
+$grey-dark: #333333;
+
+
+@mixin flex($horizontal-align: flex-start, $vertical-align: normal) {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: $horizontal-align;
+	align-items: $vertical-align;
+}
+
+
+
