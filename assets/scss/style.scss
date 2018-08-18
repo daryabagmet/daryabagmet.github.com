@@ -6,6 +6,8 @@
 body {
 	height: 100%;
 	font-family: $font-main;
+	background-color: $bg-main;
+	line-height: 0;
 
 	img {
 		width: 100%;
@@ -15,8 +17,8 @@ body {
 .portfolio-wrapper {
 	@include flex(flex-end, stretch);
 	width: 100%;
+	max-width: 1700px;
 	margin: 0 auto;
-  	background-color: $bg-main;
 }
 
 /*sidebar*/
@@ -33,17 +35,19 @@ body {
             box-shadow: 0 0 50px $black;
 
 	.main-info {
-		@include flex(center);
+		@include flex(center, center);
 		width: 100%;
+		min-height: 100px;
 		background-color: $white;
 		padding: 20px;
 		-webkit-box-sizing: border-box;
 		box-sizing: border-box;
 
+
 		&_text {
 		@include flex(center);
 		width: 100%;
-		font: 500 16px/26px $font-main;
+		font: 500 18px/26px $font-main;
 		color: $grey-dark;
 		}
 	}
@@ -101,7 +105,7 @@ body {
 /* container*/
 
 .portfolio-main {
-	@include flex(center);
+	@include flex(flex-start);
 	width: calc(100% - 350px);
 	height: 100%;
 }
@@ -110,7 +114,7 @@ body {
 .portfolio-about-container,
 .portfolio-contacts-container {
 	width: 100%;
-	max-width: 1000px;
+	max-width: 1300px;
 	height: 100%;
 	margin: 0 0 30px;
 }
@@ -127,11 +131,13 @@ body {
 	.portfolio-item {
 		@include flex();
 		position: relative;
-		width: 33%;
+		width: 25%;
 		max-width: 350px;
 		height: 210px;
 		background-color: $green-light;
 		border: 1px solid $grey-dark;
+		-webkit-box-sizing: border-box;
+		        box-sizing: border-box;
 
 		&-bg {
 			@include flex();
@@ -168,7 +174,8 @@ body {
 			position: relative;
 			@include flex(center);
 			min-width: 45%;
-			max-width: 75%;
+			max-width: 80%;
+			line-height: 16px;
 
 			&:before {
 				content: "";
@@ -299,6 +306,15 @@ body {
 	&:hover {
 		color: inherit;
 	}
+}
+
+footer {
+	@include flex(center);
+	color: $white;
+	width: 100%;
+	padding: 20px;
+	-webkit-box-sizing: border-box;
+	        box-sizing: border-box;
 }
 
 @import "media.scss";

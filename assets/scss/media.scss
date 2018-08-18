@@ -1,3 +1,11 @@
+@media all and (max-width: 1300px) {
+	.portfolio-works-container {
+		.portfolio-item {
+			width: 33%;
+		}
+	}
+}
+
 
 @media all and (max-width: 1070px) {
 	.portfolio-wrapper {
