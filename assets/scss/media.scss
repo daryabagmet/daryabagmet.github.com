@@ -7,7 +7,7 @@
 }
 
 
-@media all and (max-width: 1070px) {
+@media all and (max-width: 1170px) {
 	.portfolio-wrapper {
 		.portfolio-sidebar,
 		.portfolio-works-container,
@@ -18,7 +18,7 @@
 		}
 
 		.portfolio-main {
-			margin-top: 275px;
+			margin-top: 285px;
 			width: 100%;
 		}
 
@@ -27,19 +27,23 @@
 			padding: 0 10px;
 		}
 
-		.portfolio-item {
-			width: 100%;
+		.portfolio-works-container {
+			.portfolio-item {
+				width: 100%;
+				max-width: 300px;
+			}
 		}
 	}
 	
 }
 
-@media all and (max-width: 440px) {
+@media all and (max-width: 600px) {
 	.portfolio-about-container {
 		.skills-list-item {
 			width: 100%;
 		}
 	}
+
 	.portfolio-contacts-container {
 		.photo-wrapper {
 			display: none;
@@ -49,4 +53,11 @@
 			width: 100%;
 		}
 	}
+	footer {
+		padding: 10px;
+
+		.footer-info {
+			font-size: 14px;
+		}
+	}	
 }

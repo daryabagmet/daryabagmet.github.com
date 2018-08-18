@@ -175,7 +175,7 @@ body {
 			@include flex(center);
 			min-width: 45%;
 			max-width: 80%;
-			line-height: 16px;
+			font: 400 16px/16px $font-main;
 
 			&:before {
 				content: "";
@@ -309,7 +309,7 @@ body {
 }
 
 footer {
-	@include flex(center);
+	@include flex(flex-end);
 	color: $white;
 	width: 100%;
 	padding: 20px;
