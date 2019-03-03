@@ -183,7 +183,8 @@ body {
 					
 		}
 
-		&:hover .portfolio-item-hover {
+		&:hover .portfolio-item-hover,
+		&:active .portfolio-item-hover {
 			opacity: 1;
 		}
 
