@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+:root {
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+    --border-radius: 8px;
+    --main-bg: #f4f4f4;
+    --form-bg: #ffffff;
+    --form-text: #333333;
+    --form-border: #9c9595;
+    --submit-btn-text: #ffffff;
+    --submit-btn-bg: #3498db;
+    --submit-btn-radius: 10px;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--main-bg);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: var(--form-bg);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.container__title {
+    text-align: center;
+    margin: 20px 0 0;
+}
+
+.main-form {
+    padding: 30px;
+}
+
+.main-form__control {
+    position: relative;
+    margin: 0 0 10px;
+    padding: 0 0 20px;
+}
+
+.main-form__control-label {
+    display: flex;
+    width: 100%;
+    color:  var(--form-text);
+    margin: 0 0 5px;
+}
+
+.main-form__control-input {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid var(--form-border);
+    border-radius: var(--border-radius);
+}
+
+.main-form__control-input:focus {
+    outline: 0;
+    border-color: var(--form-border);
+}
+
+.main-form__control.success .main-form__control-input {
+    border-color: var(--success-color);
+}
+
+.main-form__control.error .main-form__control-input {
+    border-color: var(--error-color);
+}
+
+.main-form-control-msg {
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    visibility: hidden;
+    color: var(--error-color);
+}
+
+.main-form__control.error .main-form-control-msg {
+    visibility: visible;
+}
+
+.main-form__control-btn {
+    display: flex;
+    width: 150px;
+    padding: 10px;
+    margin: 20px auto 10px;
+    justify-content: center;
+    cursor: pointer;
+    background-color: var(--submit-btn-bg);
+    border-radius: var(--submit-btn-radius);
+    color: var(--submit-btn-text);
+    font-size: 16px;
+    box-shadow: none;
+    border: none;
+    outline: none;
+}
+
+.main-form-msg {
+    display: none;
+    padding: 30px;
+    text-align: center;
+}
+
+.visible {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
