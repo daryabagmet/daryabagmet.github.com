@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cinema booking seats</title>
+</head>
+<body class="wrapper">
+    <div class="cinema-container">
+        <div class="cinema-movie">
+            <label for="movie-list" class="cinema-movie__header">Choose movie:</label>
+            <select id="movie-list" class="cinema-movie__list">
+                <option value="100">Interceptor (100UAH)</option>
+                <option value="150">Hustle (150 UAH)</option>
+                <option value="120">Adam project (120 UAH)</option>
+                <option value="200">After (200 UAH)</option>
+            </select>
+        </div>
+        <div class="cinema-seats">
+            <div class="cinema-seats__legend">
+                <div class="cinema-seats__legend-item">
+                    <span class="seats occupied"></span>
+                    <span class="seats-info">Occupied</span>
+                </div>
+
+                <div class="cinema-seats__legend-item">
+                    <span class="seats selected"></span>
+                    <span class="seats-info">Selected</span>
+                </div>
+
+                <div class="cinema-seats__legend-item">
+                    <span class="seats"></span>
+                    <span class="seats-info">Available</span>
+                </div> 
+            </div>
+            <div class="cinema-seats__screen"></div>
+            <div class="cinema-seats__row">
+                <span class="seats"></span>
+                <span class="seats"></span>
+                <span class="seats"></span>
+                <span class="seats occupied"></span>
+                <span class="seats"></span>
+                <span class="seats"></span>
+                <span class="seats"></span>
+                <span class="seats"></span>
+                <span class="seats"></span>
+                <span class="seats occupied"></span>
+            </div>
+
+            <div class="cinema-seats__row">
+                <span class="seats"></span>
+                <span class="seats"></span>
+                <span class="seats"></span>
+                <span class="seats occupied"></span>
+                <span class="seats"></span>
+                <span class="seats"></span>
+                <span class="seats"></span>
+                <span class="seats"></span>
+                <span class="seats"></span>
+                <span class="seats"></span>
+            </div>
+
+            <div class="cinema-seats__row">
+                <span class="seats"></span>
+                <span class="seats"></span>
+                <span class="seats"></span>
+                <span class="seats occupied"></span>
+                <span class="seats occupied"></span>
+                <span class="seats"></span>
+                <span class="seats"></span>
+                <span class="seats"></span>
+                <span class="seats"></span>
+                <span class="seats"></span>
+            </div>
+
+            <div class="cinema-seats__row">
+                <span class="seats"></span>
+                <span class="seats"></span>
+                <span class="seats occupied"></span>
+                <span class="seats"></span>
+                <span class="seats"></span>
+                <span class="seats"></span>
+                <span class="seats occupied"></span>
+                <span class="seats"></span>
+                <span class="seats"></span>
+                <span class="seats"></span>
+            </div>
+        </div>
+        <div class="cinema-booking">
+            <p class="cinema-booking__info">
+                <span class="cinema-booking__info-item">Your order is:</span>
+                <span class="cinema-booking__info-item">Film: <span class="total-movie js-total-movie"></span></span>
+                <span class="cinema-booking__info-item">Seats: <span class="total-seats js-total-seats">0</span></span>
+                <span class="cinema-booking__info-item total">Total costs: <span class="total-cost js-total-cost">0</span> UAH.</span>
+            </p>
+            <button id="clear-seats" class="cinema-booking__clear-btn">Clear all</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
