@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Meal Finder</title>
+</head>
+<body class="main-container js-main-container">
+    <div class="meal-finder__container">
+        <div class="meal-finder__wrapper">
+            <h1 class="meal-finder__title">Find the delicious meal for everyday cooking!</h1>
+            
+            <form id="meal-search-form" class="meal-finder__search">
+                <div for="meal-search" class="meal-search-label">
+                    <input type="text" id="meal-search" class="meal-search-input">
+                    <button type="submit" id="meal-search-submit" class="meal-search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+            </form>
+
+            <div class="meal-random__wrapper">
+                <button type="button" id="meal-random-btn" class="meal-random-btn">
+                    <span>get random meals</span>
+                    <i class="fas fa-drumstick-bite"></i>
+                </button>
+            </div>
+                
+            <div class="meal-finder__result">
+                <h2 class="meal-finder__result-title js-meals-result-title"></h2>
+                <div class="meals-container js-meals-container"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="meal-recipe__popup js-meal-recipe__popup">
+        <span class="meal-recipe__title js-meal-recipe__title"></span>
+        <div class="meal-recipe__wrapper">
+            <img src="" alt="" class="meal-recipe__photo js-meal-recipe__photo"/>
+            <ul class="meal-recipe__ingridients js-meal-recipe__ingridients"></ul>
+            <p class="meal-recipe__description js-meal-recipe__description"></p>
+        </div>
+        <span class="meal-recipe__popup-close js-meal-recipe__popup-close">
+            <i class="fas fa-times"></i>
+        </span>
+    </div>
+
+    <script src="app.js"></script>
+    <script src="https://kit.fontawesome.com/8ee72a4524.js" crossorigin="anonymous"></script>
+</body>
+</html>
