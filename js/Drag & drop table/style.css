@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root {
+  --main-bg: #f0ffff;
+  --list-item-bg: #eef8fb;
+  --list-item-border: #0ab9f2;
+  --list-item-correct-bg: #2ce6125c;
+  --list-item-wrong-bg: #e6127d5c;
+  --list-item-over-bg: #eaeaea;
+  --list-item-color: #ffffff;
+  --btn-bg: #16efef80;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: var(--main-bg);
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 30px;
+}
+
+.draggable-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.draggable-list__item {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--list-item-border);
+  background-color: var(--list-item-bg);
+}
+
+.draggable-list__item.over {
+  background-color: var(--list-item-over-bg);
+}
+
+.draggable-list__item.correct {
+  background-color: var(--list-item-correct-bg);
+}
+
+.draggable-list__item.correct .draggable-list__item-number {
+  background-color: var(--list-item-correct-bg);
+}
+
+.draggable-list__item.wrong {
+  background-color: var(--list-item-wrong-bg);
+}
+
+.draggable-list__item.wrong .draggable-list__item-number {
+  background-color: var(--list-item-wrong-bg);
+}
+
+.draggable-list__item-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  flex: 1;
+  background-color: #5ccef3;
+  color: var(--list-item-color);
+}
+
+.draggable-list__item-content {
+  flex: 5;
+  padding: 20px 30px;
+}
+
+.check-order-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #02556f;
+  width: 200px;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: var(--btn-bg);
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.check-order-btn:active {
+  transform: scale(0.99);
+}
+
+.fa-paper-plane {
+  padding: 0 5px;
+}
