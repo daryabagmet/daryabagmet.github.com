@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Speech text reader</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Speech text reader</h1>
+    <button id="toggle-btn" class="basic-btn toggle-btn">
+      Toggle text
+    </button>
+    <div id="text-box" class="text-box__popup">
+      <div id="close-btn" class="text-box__popup-close">X</div>
+      <h3 class="text-box__popup-title">Choose voice</h3>
+      <select id="voices" class="text-box__popup-select"></select>
+      <textarea id="text" class="text-box__popup-textarea" placeholder="Enter text to read..."></textarea>
+      <button id="read-btn" class="basic-btn text-box__popup-read">Read text</button>
+    </div>
+    <main class="box-container"></main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
