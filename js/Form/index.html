@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Simple form validation</title>
+</head>
+<body>
+    <div class="container">
+        <h2 class="container__title">Simple form</h2>
+        <form action="" id="form-registration" class="main-form">
+            <div class="main-form__control">
+                <label for="username" class="main-form__control-label">Username</label>
+                <input type="text" id="username" class="main-form__control-input" placeholder="Enter username" name="Username"/>
+                <small class="main-form-control-msg">Error message</small>
+            </div>
+            <div class="main-form__control">
+                <label for="email" class="main-form__control-label">E-mail</label>
+                <input type="text" id="email" class="main-form__control-input" placeholder="Enter email" name="E-mail"/>
+                <small class="main-form-control-msg">Error message</small>
+            </div>
+            <div class="main-form__control">
+                <label for="password" class="main-form__control-label">Password</label>
+                <input type="password" id="password" class="main-form__control-input" placeholder="Enter password" name="Password"/>
+                <small class="main-form-control-msg">Error message</small>
+            </div>
+            <div class="main-form__control">
+                <label for="passwordConfirm" class="main-form__control-label">Confirm your password</label>
+                <input type="password" id="passwordConfirm" class="main-form__control-input" placeholder="Confirm your password" name="Confirm password"/>
+                <small class="main-form-control-msg">Error message</small>
+            </div>
+
+            <button type="submit" class="main-form__control-btn">Submit</button>
+        </form>
+        <div id="form-msg" class="main-form-msg">
+            <p>Your registration is completed. Please check the email.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

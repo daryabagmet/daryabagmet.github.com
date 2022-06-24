@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+:root {
+   --main-bg: #2d2b2b;
+   --main-text-color: #ffffff;
+   --screen-bg: #ffffff;
+   --seats-bg: #b5e7b3;
+   --seats-occupied-bg: #afaaaa;
+   --seats-selected-bg: #6bc7f4;
+   --btn-border: #6bc7f4;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    background-color: var(--main-bg);
+}
+
+.cinema-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    color: var(--main-text-color);
+    perspective: 1000px;
+    width: 100%;
+    max-width: 400px;
+}
+
+.cinema-movie {
+    display: flex;
+    width: 100%;
+}
+
+.cinema-movie__header {
+    outline: none;
+    margin: 0 10px 0 0;
+    font-size: 24px;
+}
+
+.cinema-movie__list {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.cinema-seats {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.cinema-seats__legend {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cinema-seats__legend-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 100px;
+}
+
+.cinema-seats__legend-item .seats {
+    margin: 0;
+    cursor: initial;
+}
+
+.cinema-seats__legend-item .seats:hover {
+    transform: none;
+}
+
+.cinema-seats__screen {
+    display: flex;
+    width: 100%;
+    max-width: 300px;
+    height: 100px;
+    background-color: var(--screen-bg);
+    border-radius: 4px;
+    margin: 30px 0;
+    transform: rotateX(-45deg);
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+.cinema-seats__row {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 5px 0;
+}
+
+.seats {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    background-color: var(--seats-bg);
+    border-radius: 5px 5px 0 0;
+    margin: 0 2px;
+    cursor: pointer;
+}
+.cinema-seats__row .seats:nth-of-type(2) {
+    margin: 0 10px 0 2px;
+}
+
+.cinema-seats__row .seats:nth-last-of-type(2) {
+    margin: 0 2px 0 10px;
+}
+
+.seats:hover {
+    transform: scale(1.1);
+}
+
+.seats.occupied {
+    background-color: var(--seats-occupied-bg);
+    cursor: initial;
+}
+
+.seats.occupied:hover {
+    transform: none;
+}
+
+.seats.selected {
+    background-color: var(--seats-selected-bg);
+}
+
+.cinema-booking {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cinema-booking__info {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cinema-booking__info-item {
+    width: 100%;
+    margin: 0 0 10px;
+}
+
+.cinema-booking__info-item.total {
+    margin: 10px 0;
+}
+
+.cinema-booking__clear-btn {
+    position: relative;
+    width: 100%;
+    max-width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid transparent;
+    font-family: 'Lato', sans-serif;
+}
+
+.cinema-booking__clear-btn:focus,
+.cinema-booking__clear-btn:hover {
+    border: 2px solid var(--btn-border);
+}
+
+.cinema-booking__clear-btn:active {
+    top: 2px;
+}
+
+@media (max-width: 600px) {
+    .cinema-container {
+        max-width: 80%;
+    }
+
+    .cinema-movie {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cinema-movie__header {
+        margin: 0 0 10px;
+    }
+
+    .cinema-movie__list {
+        width: 100%;
+    }
+
+    .cinema-seats__legend-item {
+        flex-direction: column;
+    }
+
+    .cinema-seats__legend-item .seats {
+        margin: 0 0 5px;
+    }
+
+    .cinema-seats__screen {
+        margin: 10px 0;
+    }
+
+    .cinema-booking__info {
+        text-align: center;
+    }
+}

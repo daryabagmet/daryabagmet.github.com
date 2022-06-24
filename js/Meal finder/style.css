@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&display=swap');
+
+:root {
+    --main-bg: #090909;
+    --meal-finder-bg: #f5dc9e;
+    --field-bg: #ffffff;
+    --meals-item-color: #ffffff;
+    --recipe-popup-bg: #fbeaea;
+    --recipe-popup-close: #959393;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.main-container {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursive;
+}
+
+.main-container.popup-shadow:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 1;
+}
+
+.meal-finder__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--main-bg);
+    height: 100%;
+    min-height: 100vh;
+}
+
+.meal-finder__container:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    background-image: url('./images/main-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 70%;
+    width: 100%;
+    height: 100%;
+}
+
+.meal-finder__wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    width: 60%;
+    z-index: 1;
+    padding: 30px;
+    background-color: var(--meal-finder-bg);
+}
+
+.meal-finder__title {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.meal-search-label {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background-color: var(--field-bg);
+    max-width: 300px;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.meal-search-input,
+.meal-search-btn {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 16px;
+}
+
+.meal-search-input {
+    width: calc(100% - 20px);
+}
+
+.meal-finder__result {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 30px auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.meals-container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.meals-item {
+    position: relative;
+    width: 150px;
+    height: auto;
+    margin: 10px;
+}
+
+.meals-item__shadow {
+    display: none;
+    justify-content: center;
+    color: var(--meals-item-color);
+    font-size: 36px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.3);
+    border-radius: 5px;
+    padding: 50px 0 0;
+    cursor: pointer;
+}
+
+.meals-item:hover .meals-item__shadow {
+    display: flex;
+}
+
+.meals-item__img {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.meals-item__info {
+    font-size: 18px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+.meal-recipe__popup {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 500px;
+    border-radius: 5px;
+    background-color: var(--recipe-popup-bg);
+    z-index: 10;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.meal-recipe__title {
+    width: 100%;
+    max-width: 80%;
+    text-align: center;
+    font-size: 24px;
+    margin: 0 0 10px;
+}
+
+.meal-recipe__category {
+    padding: 0 5px 5px;
+    border-radius: 5px;
+    background-color: rgb(182, 233, 182);
+    text-transform: lowercase;
+}
+
+.meal-recipe__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0 0;
+}
+
+.meal-recipe__ingridients {
+    margin: 0;
+}
+
+.meal-recipe__photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+
+.meal-recipe__description {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.meal-recipe__popup-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: var(--recipe-popup-close);
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.meal-random__wrapper {
+    margin: 0 10px;
+}
+
+.meal-random-btn {
+    width: 100%;
+    margin: 0;
+    border: none;
+    background-color: var(--meals-item-color);
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    outline: none;
+    cursor: pointer;
+}
+
+@media (max-width: 991px) {
+    .meal-finder__wrapper {
+        width: 80%;
+        padding: 15px;
+    }
+
+    .meal-search-label {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .meal-finder__title {
+        font-size: 1.5em;
+    }
+
+    .meal-finder__search,
+    .meal-random__wrapper {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .meal-random__wrapper {
+        margin: 10px 0;
+    }
+    
+    .meal-recipe__popup {
+        width: 100%;
+    }
+
+    .meal-recipe__photo {
+        margin: 0 auto;
+    }
+
+    .meal-recipe__ingridients {
+        margin: 10px auto;
+        padding: 0;
+        columns: 2;
+    }
+
+    .meal-recipe__ingridients li {
+        padding: 0 2px 0 0;
+    }
+}

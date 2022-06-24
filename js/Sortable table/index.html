@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sortable table</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <button id="add-btn" class="sidebar__btn">Add person</button>
+      <button id="double-btn" class="sidebar__btn">Double</button>
+      <button id="filter-btn" class="sidebar__btn">Filter</button>
+      <button id="sort-btn" class="sidebar__btn">Sort</button>
+      <button id="total-btn" class="sidebar__btn">Total</button>
+    </aside>
+    
+    <main id="content" class="content">
+      <h2 class="content__title">Persons</h2>
+    </main>
+
+    <div id="content-msg" class="content__msg">
+      There are no persons with more than $ 1 000,000 income. Try to double button.
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
