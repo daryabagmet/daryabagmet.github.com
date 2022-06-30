@@ -1,0 +1,18 @@
+.error-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
+  max-width: 600px;
+  margin: 100px auto;
+  background: #f25757;
+  min-height: 300px;
+}
+
+.error-indicator-txt {
+  width: 100%;
+  font-weight: 600;
+}

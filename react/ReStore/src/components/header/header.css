@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  border-bottom: 1px solid #d5d1d1;
+}    
+
+.header__logo {
+  text-decoration: none;
+  margin: 10px 20px;
+  width: auto;
+}
+
+.header__cart {
+  width: auto;
+  text-decoration: none;
+  color: #0dcaf0;
+}
+
+.fa-cart-shopping {
+  padding: 0 5px;
+}
