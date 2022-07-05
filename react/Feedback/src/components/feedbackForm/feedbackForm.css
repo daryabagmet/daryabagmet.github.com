@@ -1,0 +1,38 @@
+[type='radio'] {
+  opacity: 0;
+}
+
+[type='radio']:checked~label {
+  background: #ff6a95;
+  color: #ffffff;
+}
+
+.form__input-group {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid #cccccc;
+  padding: 8px 10px;
+  border-radius: 8px;
+}
+
+.form__input-group input {
+  flex-grow: 2;
+  border: none;
+  font-size: 16px;
+}
+
+.form__input-group input:focus {
+  outline: none;
+}
+
+.feedback__form-message {
+  padding-top: 10px;
+  text-align: center;
+  color: rebeccapurple;
+}
+
+@media (max-width: 600px) {
+  .form__input-group input {
+    width: 80%;
+  }
+}

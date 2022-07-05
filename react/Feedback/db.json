@@ -1,0 +1,29 @@
+{
+  "feedback": [
+    {
+      "text": "Awesome! Everything is well.",
+      "rating": 8,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "rating": 8,
+      "text": "Friendly and cozy. Recomended"
+    },
+    {
+      "id": 3,
+      "text": "Good talks, good service.",
+      "rating": 6
+    },
+    {
+      "text": "Bad experience",
+      "rating": 2,
+      "id": 4
+    },
+    {
+      "text": "test review",
+      "rating": 10,
+      "id": 5
+    }
+  ]
+}
