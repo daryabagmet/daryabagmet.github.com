@@ -1,3 +1,2 @@
 # daryabagmet.github.com
 
-# nextjs
