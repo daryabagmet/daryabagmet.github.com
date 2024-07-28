@@ -2,6 +2,7 @@ const rulesBtn = document.getElementById('rules-btn');
 const rulesCloseBtn = document.getElementById('close-btn');
 const rulesContent = document.getElementById('rules');
 const canvas = document.getElementById('canvas');
+const scoreDisplay = document.getElementById('scoreDisplay');
 const ctx = canvas.getContext('2d');
 let score = 0;
 
@@ -53,8 +54,7 @@ function drawPaddle() {
 }
 
 function drawScore() {
-	ctx.font = '20px Arial';
-	ctx.fillText(`Score: ${score}`, canvas.width/2 - 30, 60);
+	scoreDisplay.textContent = `Score: ${score}`;
 }
 
 function drawBricks() {
