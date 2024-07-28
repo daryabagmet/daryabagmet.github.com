@@ -10,38 +10,38 @@ const brickColumnCount = 5;
 
 
 const ball = {
-  x: canvas.width / 2,
-  y: canvas.height / 2,
-  size: 10,
-  speed: 4,
-  dx: 4,
-  dy: -4
+	x: canvas.width / 2,
+	y: canvas.height / 2,
+	size: 10,
+	speed: 4,
+	dx: 4,
+	dy: -4
 }
 
 const paddle = {
 	x: canvas.width / 2 - 40,
 	y: canvas.height - 20,
-  w: 80,
-  h: 10,
+	w: 80,
+	h: 10,
 	speed: 8,
 	dx: 0,
 };
 
 const brickInfo = {
-  w:70,
-  h: 20,
-  padding: 10,
-  offsetX: 45,
-  offsetY: 60,
-  visible: true
+	w:70,
+	h: 20,
+	padding: 10,
+	offsetX: 45,
+	offsetY: 60,
+	visible: true
 }
 
 function drawBall() {
-  ctx.beginPath();
-  ctx.arc(ball.x, ball.y, ball.size, 0, Math.PI * 2);
-  ctx.fillStyle = '#0095dd';
-  ctx.fill();
-  ctx.closePath();
+	ctx.beginPath();
+	ctx.arc(ball.x, ball.y, ball.size, 0, Math.PI * 2);
+	ctx.fillStyle = '#0095dd';
+	ctx.fill();
+	ctx.closePath();
 }
 
 function drawPaddle() {
@@ -53,8 +53,8 @@ function drawPaddle() {
 }
 
 function drawScore() {
-  ctx.font = '20px Arial';
-  ctx.fillText(`Score: ${score}`, canvas.width/2 - 30, 30);
+	ctx.font = '20px Arial';
+	ctx.fillText(`Score: ${score}`, canvas.width/2 - 30, 100);
 }
 
 function drawBricks() {
@@ -159,7 +159,6 @@ function draw() {
 function update() {
   movePaddle();
   moveBall();
-
   draw();
 
   requestAnimationFrame(update, canvas);
@@ -170,7 +169,7 @@ update();
 function keyDown(e) {
   if(e.key === 'Right' || e.key === 'ArrowRight') {
     paddle.dx = paddle.speed;
-  }else if(e.key === 'Left' || e.key === 'ArrowLeft') {
+  } else if(e.key === 'Left' || e.key === 'ArrowLeft') {
     paddle.dx = -paddle.speed;
   }
 }
