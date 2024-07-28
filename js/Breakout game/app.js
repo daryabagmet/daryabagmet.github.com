@@ -54,7 +54,7 @@ function drawPaddle() {
 
 function drawScore() {
 	ctx.font = '20px Arial';
-	ctx.fillText(`Score: ${score}`, canvas.width/2 - 30, 100);
+	ctx.fillText(`Score: ${score}`, canvas.width/2 - 30, 60);
 }
 
 function drawBricks() {
