@@ -27,6 +27,13 @@
 
 .main-container__title {
   color: var(--main-text-color);
+  margin: 10px auto;
+}
+
+.score-content {
+  color: var(--main-text-color);
+  font-size: 20px;
+  margin: 10px auto 20px;
 }
 
 .canvas-field {
